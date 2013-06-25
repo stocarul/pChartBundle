@@ -16,9 +16,40 @@ Robin Bakels (robin@xlab.nl). Software Engineer for the Dutch company *Xlab B.V.
 
 Installation
 ============
-Installation is quite straightforward. Integrating the bundle in your current Symfony 2 installation can be done by adding the following to your *app/AppKernel.php* file:
+Installation is quick and easy, 2 steps process:
 
-	new Xlab\pChartBundle\XlabpChartBundle(),
+1. Install XlabpChartBundle
+2. Enable the bundle
+
+### Step 1: Install xLabpChartBundle
+
+Add the following dependency to your composer.json file:
+``` json
+{
+    "require": {
+        "_some_packages": "...",
+
+        "stocarul/pchart-bundle": "dev-master"
+    }
+}
+```
+
+### Step 2: Enable the bundle
+
+Finally, enable the bundle in the kernel:
+
+``` php
+<?php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new Xlab\pChartBundle\XlabpChartBundle(),
+    );
+}
+```
 
 Optionally, you can add the following to your routing.yml:
 
