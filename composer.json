@@ -1,0 +1,22 @@
+{
+    "name": "stocarul/pchart-bundle",
+    "type": "library",
+    "description": "PHP class oriented framework designed to create charts",
+    "keywords": [],
+    "homepage": "http://www.pchart.net",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Jean-Damien POGOLOTTI",
+            "homepage": "http://fr.linkedin.com/in/jeandamien"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Xlab\\pChartBundle\\": "" }
+    },
+    "target-dir": "Xlab/pChartBundle",
+    "minimum-stability": "dev"
+}
